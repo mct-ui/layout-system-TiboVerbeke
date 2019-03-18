@@ -251,13 +251,21 @@ a:focus {
 /* Horizontal alignment modifiers*/
 .o-layout--justify-start {}
 
-.o-layout--justify-end {}
+.o-layout--justify-end {
+    justify-content: flex-end;
+}
 
-.o-layout--justify-center {}
+.o-layout--justify-center {
+    justify-content: center;
+}
 
-.o-layout--justify-space-around {}
+.o-layout--justify-space-around {
+    justify-content: space-around;
+}
 
-.o-layout--justify-space-between {}
+.o-layout--justify-space-between {
+    justify-content: space-between;
+}
 
 /* Vertical item alignment modifiers */
 .o-layout--align-start {}
