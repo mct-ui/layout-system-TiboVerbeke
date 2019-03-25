@@ -250,6 +250,10 @@ a:focus {
     flex-flow: row-reverse;
 }
 
+.o-layout--column-reverse {
+    flex-flow: column-reverse;
+}
+
 /* Horizontal alignment modifiers*/
 .o-layout--justify-start {}
 
@@ -269,8 +273,15 @@ a:focus {
     justify-content: space-between;
 }
 
+.o-layout--justify-space-evenly {
+    justify-content: space-evenly;
+}
+
 /* Vertical item alignment modifiers */
-.o-layout--align-start {}
+.o-layout--align-start {
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
 
 .o-layout--align-end {
     align-items: flex-end;
@@ -280,7 +291,9 @@ a:focus {
     align-items: center;
 }
 
-.o-layout--align-baseline {}
+.o-layout--align-baseline {
+    align-items: baseline;
+}
 
 /* Vertical content alignment modifiers. Only work if there is one than one flex item */
 .o-layout--align-content-start {}
@@ -293,9 +306,13 @@ a:focus {
     align-content: center;
 }
 
-.o-layout--align-content-space-around {}
+.o-layout--align-content-space-around {
+    align-content: space-around;
+}
 
-.o-layout--align-content-space-between {}
+.o-layout--align-content-space-between {
+    align-content: space-between;
+}
 
 /*------------------------------------*\
   #COMPONENTS
